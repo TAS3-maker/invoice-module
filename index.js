@@ -15,7 +15,7 @@ const __dirname = dirname(__filename)
 
 import invoiceRoutes from './routes/invoices.js'
 import clientRoutes from './routes/clients.js'
-import userRoutes from './routes/userRoutes.js'
+import userRoutes from './routes/userRoutes.js'   
 
 import profile from './routes/profile.js'
 import pdfTemplate from './documents/index.js'
@@ -31,7 +31,7 @@ app.use((cors()))
 
 app.use('/invoices', invoiceRoutes)
 app.use('/clients', clientRoutes)
-app.use('/users', userRoutes)
+app.use('/users', userRoutes) 
 app.use('/profiles', profile)
 
 // NODEMAILER TRANSPORT FOR SENDING INVOICE VIA EMAIL
